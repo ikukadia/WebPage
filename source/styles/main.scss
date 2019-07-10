@@ -1,0 +1,261 @@
+$pink-color: #e89494;
+$dark-blue-color: #031925;
+$blue-color: #0c3a4d;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin: auto;
+}
+
+/*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px; 
+  z-index: 9999;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+}*/
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-top: 10px solid $pink-color;
+  border-bottom: 10px solid $pink-color;
+}
+
+header {
+  background-color: $dark-blue-color;
+  color: white;
+  padding: 10px;
+}
+
+h1 {
+  color: $blue-color;
+}
+
+h2 {
+  color: white;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: $blue-color;
+  transition: 0.5s;
+  z-index: 1;
+  padding: 15px;
+  font-size: 30px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  float: left;
+  text-align: right;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#links {
+  float: right;
+}
+
+#navbar a:hover {
+  color: $pink-color;
+}
+
+.active {
+  background-color: $pink-color;
+  border-radius: 4px;
+}
+
+#navbar a.active {
+  color: white;
+}
+
+.fixed-background {
+  background-image: url("assets/background.jpg");
+  min-height: 180px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel img {
+  max-width: 35%;
+}
+
+.directions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  color: $blue-color;
+  font-size: 80px;
+}
+
+.prev:hover,
+.next:hover {
+  color: $pink-color;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.25s;
+  animation-name: fade;
+  animation-duration: 1.25s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#modal-wrapper {
+  background-color: $pink-color;
+}
+
+.modal-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 20%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal-trigger {
+  align-self: center;
+  background-color: white;
+  text-align: center;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  width: 30%;
+}
+
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 15px;
+  font-size: 17px;
+  width: 50%;
+}
+
+.close {
+  color: $blue-color;
+  float: right;
+  font-size: 30px;
+}
+
+.close:hover {
+  color: $pink-color;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#columns-wrapper {
+  background-color: white;
+}
+
+.columns {
+  display: flex;
+}
+
+.project {
+  text-align: justify;
+  flex: 1;
+  padding: 0px 15px;
+}
+
+.project h2 {
+  color: $blue-color;
+  text-align: center;
+}
+
+#video-wrapper {
+  background-color: $pink-color;
+}
+
+video {
+  max-width: 50%;
+}
+
+#social-wrapper {
+  background-color: $blue-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  border-bottom: none;
+}
+
+.fa {
+  color: white;
+  text-decoration: none;
+}
+
+.fa:hover {
+  color: $pink-color;
+}
+
+.current {
+  background-color: black;
+}
+
+footer {
+  background-color: $dark-blue-color;
+  color: white;
+  padding: 10px;
+}

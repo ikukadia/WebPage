@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+    <title>MP1</title>
+</head>
+
+<body>
+  <header id="header">
+    <span>CS498</span>
+  </header>
+
+  <nav id="navbar">
+    <a class="fa fa-home fa-lg" href="#"></a>
+    <a class="fa fa-handshake-o fa-lg" href="#social-wrapper"></a>
+    <div id="links">
+      <a class="navigate" href="#carousel-jump">Carousel</a>
+      <a class="navigate" href="#modal-jump">Modal</a>
+      <a class="navigate" href="#columns-jump">Columns</a>
+      <a class="navigate" href="#video-jump">Video</a>
+    </div>
+  </nav>
+
+  
+  <div class="parent" id="container">
+    <div id="carousel-jump">
+      <div class="fixed-background"></div>
+      <div class="wrapper" id="carousel-wrapper">
+        <h1>CAROUSEL</h1>
+        <div class="carousel">
+          <div class="slide fade">
+            <img src="assets/cake.png" alt="cake">
+          </div>
+          <div class="slide fade">
+            <img src="assets/circus.png" alt="circus">
+          </div>
+          <div class="slide fade">
+            <img src="assets/game.png" alt="game">
+          </div>
+        </div>
+        <div class="directions">
+          <a class="prev" id="prev">&#8249</a>
+          <a class="next" id="next">&#8250</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-jump">
+      <div class="fixed-background"></div>
+      <div class="wrapper" id="modal-wrapper">
+        <h1>Modal</h1>
+        <button id="modal-trigger">How do you comfort a JavaScript bug?</button>
+        <div class="modal-container" id="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>You console it!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="columns-jump">
+      <div class="fixed-background"></div>
+      <div class="wrapper" id="columns-wrapper">
+        <h1>COLUMNS</h1>
+        <div class="columns">
+          <div class="project">
+            <h2>ONE</h2>
+            <p>Here is a description of one. Here is a description of one. Here is a description of one. Here is a description of one. Here is a description of one.</p>
+          </div>
+          <div class="project">
+            <h2>TWO</h2>
+            <p>Here is a description of two. Here is a description of two. Here is a description of two. Here is a description of two. Here is a description of two.</p>
+          </div>
+          <div class="project">
+            <h2>THREE</h2>
+            <p>Here is a description of three. Here is a description of three. Here is a description of three. Here is a description of three. Here is a description of three.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="video-jump">
+      <div class="fixed-background"></div>
+      <div class="wrapper" id="video-wrapper">
+        <h1>VIDEO</h1>
+        <div class="video">
+          <video class="video" loop controls>
+            <source src="assets/simpsons.mp4" type="video/mp4">Your browser does not support this video format.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-background"></div>
+    <div class="wrapper" id="social-wrapper">
+      <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook fa-2x"></a>
+      <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter fa-2x"></a>
+      <a href="https://www.github.com" target="_blank" class="fa fa-github fa-2x"></a>
+    </div>
+  </div>
+
+
+  <footer>
+    <span>&copy 2019</span>
+  </footer>
+
+  <script src="bundle.js" type="text/javascript"></script>
+</body>
+</html>
